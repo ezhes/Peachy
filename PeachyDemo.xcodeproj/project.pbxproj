@@ -12,16 +12,20 @@
 		22F6637C220CA6F900E2B343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F6637A220CA6F900E2B343 /* Main.storyboard */; };
 		22F6637E220CA6FA00E2B343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F6637D220CA6FA00E2B343 /* Assets.xcassets */; };
 		22F66381220CA6FA00E2B343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F6637F220CA6FA00E2B343 /* LaunchScreen.storyboard */; };
+		22F66398220CA8AC00E2B343 /* PeachAPISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F66396220CA8AC00E2B343 /* PeachAPISession.swift */; };
+		22F66399220CA8AC00E2B343 /* API_Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F66397220CA8AC00E2B343 /* API_Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22F66373220CA6F900E2B343 /* Peachy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peachy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F66373220CA6F900E2B343 /* PeachyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeachyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F66376220CA6F900E2B343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F66378220CA6F900E2B343 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22F6637B220CA6F900E2B343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F6637D220CA6FA00E2B343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F66380220CA6FA00E2B343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22F66382220CA6FA00E2B343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F66396220CA8AC00E2B343 /* PeachAPISession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeachAPISession.swift; path = Peachy_API_Client/PeachAPISession.swift; sourceTree = SOURCE_ROOT; };
+		22F66397220CA8AC00E2B343 /* API_Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API_Models.swift; path = Peachy_API_Client/API_Models.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		22F6636A220CA6F900E2B343 = {
 			isa = PBXGroup;
 			children = (
-				22F66375220CA6F900E2B343 /* Peachy */,
+				22F66375220CA6F900E2B343 /* PeachyDemo */,
 				22F66374220CA6F900E2B343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,14 +50,15 @@
 		22F66374220CA6F900E2B343 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F66373220CA6F900E2B343 /* Peachy.app */,
+				22F66373220CA6F900E2B343 /* PeachyDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22F66375220CA6F900E2B343 /* Peachy */ = {
+		22F66375220CA6F900E2B343 /* PeachyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				22F66395220CA89800E2B343 /* Peach_API_Client */,
 				22F66376220CA6F900E2B343 /* AppDelegate.swift */,
 				22F66378220CA6F900E2B343 /* ViewController.swift */,
 				22F6637A220CA6F900E2B343 /* Main.storyboard */,
@@ -61,15 +66,24 @@
 				22F6637F220CA6FA00E2B343 /* LaunchScreen.storyboard */,
 				22F66382220CA6FA00E2B343 /* Info.plist */,
 			);
-			path = Peachy;
+			path = PeachyDemo;
+			sourceTree = "<group>";
+		};
+		22F66395220CA89800E2B343 /* Peach_API_Client */ = {
+			isa = PBXGroup;
+			children = (
+				22F66397220CA8AC00E2B343 /* API_Models.swift */,
+				22F66396220CA8AC00E2B343 /* PeachAPISession.swift */,
+			);
+			name = Peach_API_Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22F66372220CA6F900E2B343 /* Peachy */ = {
+		22F66372220CA6F900E2B343 /* PeachyDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22F66385220CA6FA00E2B343 /* Build configuration list for PBXNativeTarget "Peachy" */;
+			buildConfigurationList = 22F66385220CA6FA00E2B343 /* Build configuration list for PBXNativeTarget "PeachyDemo" */;
 			buildPhases = (
 				22F6636F220CA6F900E2B343 /* Sources */,
 				22F66370220CA6F900E2B343 /* Frameworks */,
@@ -79,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = Peachy;
+			name = PeachyDemo;
 			productName = Peachy;
-			productReference = 22F66373220CA6F900E2B343 /* Peachy.app */;
+			productReference = 22F66373220CA6F900E2B343 /* PeachyDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 22F6636E220CA6F900E2B343 /* Build configuration list for PBXProject "Peachy" */;
+			buildConfigurationList = 22F6636E220CA6F900E2B343 /* Build configuration list for PBXProject "PeachyDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				22F66372220CA6F900E2B343 /* Peachy */,
+				22F66372220CA6F900E2B343 /* PeachyDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F66399220CA8AC00E2B343 /* API_Models.swift in Sources */,
 				22F66379220CA6F900E2B343 /* ViewController.swift in Sources */,
 				22F66377220CA6F900E2B343 /* AppDelegate.swift in Sources */,
+				22F66398220CA8AC00E2B343 /* PeachAPISession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22F6636E220CA6F900E2B343 /* Build configuration list for PBXProject "Peachy" */ = {
+		22F6636E220CA6F900E2B343 /* Build configuration list for PBXProject "PeachyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F66383220CA6FA00E2B343 /* Debug */,
@@ -326,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22F66385220CA6FA00E2B343 /* Build configuration list for PBXNativeTarget "Peachy" */ = {
+		22F66385220CA6FA00E2B343 /* Build configuration list for PBXNativeTarget "PeachyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22F66386220CA6FA00E2B343 /* Debug */,
