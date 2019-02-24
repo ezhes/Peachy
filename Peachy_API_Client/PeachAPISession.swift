@@ -143,7 +143,7 @@ class PeachAPISession {
     
     
     /// Get the data of one stream specifically. This request, unliked `getConnections` does return comments for each post
-    public func getStream(streamID:String,completion: @escaping ((Result<PeachStream>) -> Void)) {
+    public func getStream(streamID:String,cursorPosition:String? = nil,completion: @escaping ((Result<PeachStream>) -> Void)) {
         switch status {
         case .authenticated(_ ):
             break;
@@ -152,7 +152,9 @@ class PeachAPISession {
             return
         }
         
-        makeAPICall(path: "stream/id/\(streamID)", method: "GET", postData: [:], completion: completion)
+        let cursorArg = "\(cursorPosition != nil ? "?cursor=\(cursorPosition!)" :"")"
+        
+        makeAPICall(path: "stream/id/\(streamID)\(cursorArg)", method: "GET", postData: [:], completion: completion)
     }
     
     /// Get a single post, useful for handling links and viewing posts from the activity stream

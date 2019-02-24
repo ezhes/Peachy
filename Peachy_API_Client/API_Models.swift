@@ -67,6 +67,7 @@ class PeachStream:Codable {
     let isFavorite:Bool?
     let youFollow:Bool?
     let followsYou:Bool?
+    let cursor:String?
 }
 
 class Post:Codable {
