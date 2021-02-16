@@ -2,8 +2,8 @@
 //  API_Models.swift
 //  Pit
 //
-//  Created by Salman Husain on 2/3/19.
-//  Copyright © 2019 Salman Husain. All rights reserved.
+//  Created by Allison Husain on 2/3/19.
+//  Copyright © 2019 Allison Husain. All rights reserved.
 //
 
 import Foundation

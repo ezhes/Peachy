@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Peachy
 //
-//  Created by Salman Husain on 2/7/19.
-//  Copyright © 2019 Salman Husain. All rights reserved.
+//  Created by Allison Husain on 2/7/19.
+//  Copyright © 2019 Allison Husain. All rights reserved.
 //
 
 import UIKit
